@@ -1,0 +1,13 @@
+# Site settings
+title: Rishat Muhametshin
+email: rishatmuhametshin@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  A humble T-shaped engineer with reverse-traditional career path.
+  I code on JavaScript and trade things for burgers.
+baseurl: "" # the subpath of your site, e.g. /blog/
+# url: "http://yourdomain.com" # the base hostname & protocol for your site
+# twitter_username: taxigy
+github_username:  taxigy
+
+# Build settings
+markdown: kramdown
