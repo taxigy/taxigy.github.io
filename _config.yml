@@ -1,8 +1,10 @@
 # Site settings
-title: Rishat Muhametshin
+title: DA SITE
+author: Rishat Muhametshin
 email: rishatmuhametshin@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  A humble T-shaped engineer with reverse-traditional career path.
+description: >
+  A humble T-shaped engineer with reverse-traditional career path,
+  from management into coding.
   I code on JavaScript and trade things for burgers.
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
