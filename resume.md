@@ -52,3 +52,5 @@ You can reach me via
 * email: [rishatmuhametshin@gmail.com](mailto:rishatmuhametshin@gmail.com)
 * FaceTime: [rishatmuhametshin@gmail.com](facetime:rishatmuhametshin@gmail.com)
 * or even phone: [+7 (919) 916-03-07](tel:+79199160307)
+
+I'm currently located in Izhevsk, Russia.
