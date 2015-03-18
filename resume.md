@@ -7,9 +7,7 @@ permalink: /resume/
 
 ## Profile
 
-Having 8 years total experience in software development, I've covered different software product development stages and set up processes that helped organizations step up new product delivery to successfully conquer new business fields. The skill set I demonstrate is T-shaped and includes broad management and leadership experience as well as deep knowledge of software development technologies.
-
-I am passionate about setting up processes that help scale product delivery and communications among different teams and streams.
+In software development area since 2007, having gained diverse engineering and management experience, covered different software product development stages, and set up processes that helped organizations successfully conquer new business fields. I work both with engineers, key stakeholders, third-parties, partners and clients, and practice clear information management and communications on top of efficient development process. I am passionate about getting people into perfectly integrated teams and getting a product right in hands of the users.
 
 ## Experience
 
@@ -38,12 +36,6 @@ Redesigned and migrated complete user manuals and technical documentation to the
 
 ## Education
 Izhevsk State Technical University — Specialist, Computer Science, 2004-2009.
-
-## Key Technologies
-
-* Tools: Grunt, Bower.
-* Back-end: Node, Express, Sails; Mongo.
-* Front-end: Angular, Backbone, Marionette, HTML5 web components; SCSS; SVG.
 
 ## Contact
 
