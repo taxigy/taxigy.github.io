@@ -27,7 +27,7 @@ As an engineer at R&D department, a member of the research team of four engineer
 
 ### Head of Product Development, Bitmaster; Izhevsk, Russia — 2011-2012
 
-With newly created structure within the organization, was in charge of new product development. Designed and implemented several APIs that were consumed by third-party developers who have produced applications. With the assistance of a small team, finished several projects (from about 1000 to 10,000 man-hours, of various complexity) and shipped new products to support core business that multiplied high-qualityaudience of complete product set.
+With newly created structure within the organization, was in charge of new product development. Designed and implemented several APIs that were consumed by third-party developers who have produced applications. With the assistance of a small team, finished several projects (from about 1000 to 10,000 man-hours, of various complexity) and shipped new products to support core business that multiplied high-quality audience of complete product set.
 
 
 ### Software Engineering Generalist, Bitmaster; Izhevsk, Russia — 2007-2012
