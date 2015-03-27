@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Teching people project management"
+title:  "Teaching people project management"
 date:   2015-03-04 10:27:30
 categories: teaching project-management
 ---
