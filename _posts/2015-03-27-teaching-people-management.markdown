@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Teaching people project management"
-date:   2015-03-04 10:27:30
+date:   2015-03-25 14:11:30
 categories: teaching project-management
 ---
 
