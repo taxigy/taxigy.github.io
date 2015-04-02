@@ -2,7 +2,7 @@
 layout: page
 title: Resume
 h1: Rishat Muhametshin
-permalink: /resume/
+permalink: /
 ---
 
 ## Profile
