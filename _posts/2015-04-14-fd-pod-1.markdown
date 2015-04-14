@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Первый эпизод, фактически второй"
+date:   2015-04-14 13:13:30
+categories: podcast
+number: 1
+duration: 14:43
+length: 15907983
+mp3: https://s3-eu-west-1.amazonaws.com/mgr2sde-mp3/fd-2015-04-14-2nd.mp3
+---
+
+Первый выпуск, в котором я не рассказываю ничего существенного и рекомендую послушать другие подкасты.
+
+Ссылки:
+
+* [Tim Ferris Show, Inteview of Kevin Kelly, co-founder of WIRED](http://fourhourworkweek.com/2014/08/29/kevin-kelly/)
+* [Javascript Jabber, Careers for Junior Developers with Aimee Knight](http://devchat.tv/js-jabber/153-jsj-careers-for-junior-developers-with-aimee-knight)
+* [UserTesting](http://usertesting.com)
