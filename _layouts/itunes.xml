@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
-    <title>{{ site.podcast.title }}</title>
-    <link>{{ site.podcast.link }}</link>
-    <description>{{ site.podcast.description }}</description>
+    <title>{{ page.title }}</title>
+    <link>{{ page.link }}</link>
+    <description>{{ page.description }}</description>
+    <itunes:summary>{{ page.description }}</itunes:summary>
     <itunes:author>{{ site.author }}</itunes:author>
     <copyright>{{ site.license }}</copyright>
-    <language>ru-ru</language>
-    <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
-    <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
-    <itunes:category text="{{ site.podcast.category }}">
-    	{% for subcategory in site.podcast.subcategories %}
-        <itunes:category text="{{ subcategory }}"/>
+    <language>{{ page.language }}</language>
+    <pubDate>{{ site.categories.podcast.first.date | date_to_rfc822 }}</pubDate>
+    <lastBuildDate>{{ site.categories.podcast.first.date | date_to_rfc822 }}</lastBuildDate>
+    <itunes:category text="{{ page.category }}">
+    	{% for subcategory in page.subcategories %}
+      <itunes:category text="{{ subcategory }}"/>
     	{% endfor %}
     </itunes:category>
     <itunes:explicit>Yes</itunes:explicit>
-    <itunes:image href="{{ site.podcast.art }}"/>
-    <itunes:subtitle>{{ site.podcast.subtitle }}</itunes:subtitle>
-    <itunes:summary>{{ site.podcast.summary }}</itunes:summary>
+    <itunes:image href="{{ page.art }}"/>
+    <itunes:subtitle>{{ page.subtitle }}</itunes:subtitle>
     <itunes:owner>
       <itunes:name>{{ site.author }}</itunes:name>
       <itunes:email>{{ site.email }}</itunes:email>
@@ -25,16 +25,16 @@
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.categories.podcast %}
     <item>
-      <title>{{ site.podcast.shortname }} {{ post.number }}: {{ post.title }}</title>
+      <title>{{ page.shortname }} {{ post.number }}: {{ post.title }}</title>
       <itunes:explicit>Yes</itunes:explicit>
       <itunes:author>{{ site.author }}</itunes:author>
       <itunes:duration>{{ post.duration }}</itunes:duration>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-      <itunes:subtitle></itunes:subtitle>
+      <itunes:subtitle>{{ post.excerpt | strip_html | strip_newlines }}</itunes:subtitle>
       <itunes:summary><![CDATA[{{ post.excerpt | strip_html | strip_newlines }}]]></itunes:summary>
       <description><![CDATA[{{ post.excerpt | strip_newlines }}]]></description>
       <guid isPermaLink="true">{{ post.mp3 }}</guid>
-      <category>Education</category>
+      <category>{{ page.category }}</category>
       <enclosure length="{{ post.length }}" url="{{ post.mp3 }}" type="audio/mpeg"/>
     </item>
     {% endfor %}

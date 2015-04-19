@@ -2,10 +2,7 @@
 title: taxigy.github.io
 author: Rishat Muhametshin
 email: rishatmuhametshin@gmail.com
-description: >
-  A humble T-shaped engineer with reverse-traditional career path,
-  from management into coding.
-  I code on JavaScript and trade things for burgers.
+description: No BS.
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: taxigy
@@ -13,18 +10,4 @@ github_username:  taxigy
 # Build settings
 markdown: kramdown
 # Misc
-licence: CC-BY-CA
-# Podcast
-podcast:
-  title: Управлять — не кодить
-  link: http://a-freelance-dad.tumblr.com
-  art: http://placehold.it/200x200
-  category: Education
-  subcategories:
-  - Training
-  subtitle: todo
-  summary: >
-    О том, как, будучи менеджером, стать разработчиком и обменять обязанности управлять людьми и продуктами
-    на умение создавать продукты собственными руками. Автор совершает открытия, анализирует факты и делится информацией,
-    которую настоящие программисты порой сочли бы смехотворной.
-  shortname: mgr2sde
+license: CC-BY-CA
