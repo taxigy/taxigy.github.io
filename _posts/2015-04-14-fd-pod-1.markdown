@@ -4,7 +4,7 @@ title: "О пользе расставания с идеями"
 date: 2015-04-14 13:13:30
 categories: podcast freelancedad
 number: 2
-duration: 14:43
+duration: "14:43"
 length: 15907983
 mp3: https://s3-eu-west-1.amazonaws.com/mgr2sde-mp3/fd-2015-04-14-2nd.mp3
 ---

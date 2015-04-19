@@ -31,8 +31,8 @@
       <itunes:duration>{{ post.duration }}</itunes:duration>
       <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
       <itunes:subtitle>{{ post.excerpt | strip_html | strip_newlines }}</itunes:subtitle>
-      <itunes:summary><![CDATA[{{ post.excerpt | strip_html | strip_newlines }}]]></itunes:summary>
-      <description><![CDATA[{{ post.excerpt | strip_newlines }}]]></description>
+      <itunes:summary><![CDATA[{{ post.content | strip_newlines }}]]></itunes:summary>
+      <description><![CDATA[{{ post.content | strip_newlines }}]]></description>
       <guid isPermaLink="true">{{ post.mp3 }}</guid>
       <category>{{ page.category }}</category>
       <enclosure length="{{ post.length }}" url="{{ post.mp3 }}" type="audio/mpeg"/>
