@@ -2,7 +2,7 @@
 layout: itunes
 skip: 1
 permalink: /a-freelance-dad/podcast/
-title: A Freelance Dad podcast
+title: A Freelance Dad podcast (ru)
 shortname: AFDP
 subtitle: todo
 link: http://a-freelance-dad.tumblr.com/

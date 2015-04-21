@@ -1,3 +1,7 @@
+%header-font {
+    font-family: "Myriad Pro", Arial, sans-serif;
+}
+
 /**
  * Reset some basic elements
  */
@@ -17,7 +21,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: $base-font-weight;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
@@ -30,17 +34,24 @@ body {
  */
 h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
-ul, ol, dl, figure,
+ul, ol, dl, figure, hr,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 4;
+    margin-bottom: $spacing-unit;
+}
+
+hr {
+    width: 20%;
+    background-color: $grey-color-dark;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h2, h3, h4, h5, h6 {
-    margin-top: $spacing-unit * $base-line-height / 2;
+    margin-bottom: $spacing-unit / 6;
+    @extend %header-font;
 }
 
 h2 + h3, h3 + h4, h4 + h5, h5 + h6 {
-    margin-top: 0;
 }
 
 /**
@@ -76,7 +87,6 @@ ul, ol {
 li {
     > ul,
     > ol {
-         margin-bottom: 0;
     }
 }
 
@@ -86,7 +96,8 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: $base-font-weight * 1.5;
+    color: $text-color-dark;
 }
 
 
@@ -99,7 +110,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brand-color-dark;
     }
 
     &:hover {
@@ -116,13 +127,12 @@ a {
 blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
+    border-radius: 4px;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
-    letter-spacing: -1px;
-    font-style: italic;
+    font-size: $base-font-size / 1.05;
 
-    > :last-child {
-        margin-bottom: 0;
+    > p {
+        margin-bottom: $spacing-unit / 2;
     }
 }
 
@@ -133,10 +143,12 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: $base-font-size / 1.25;
+    line-height: $spacing-unit / 1.5;
+    font-family: monospace, sans-serif;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: $grey-color-light;
 }
 
 code {
@@ -187,24 +199,5 @@ pre {
         content: "";
         display: table;
         clear: both;
-    }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-    > svg {
-        display: inline-block;
-        width: 16px;
-        height: 16px;
-        vertical-align: middle;
-
-        path {
-            fill: $grey-color;
-        }
     }
 }

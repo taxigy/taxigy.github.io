@@ -1,5 +1,6 @@
 ---
 layout: page
+showAtHeader: 1
 title: Resume
 h1: Rishat Muhametshin
 permalink: /

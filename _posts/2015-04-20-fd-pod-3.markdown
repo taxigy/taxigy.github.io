@@ -4,9 +4,9 @@ title: "Об интервью, как у нас и как у них"
 date: 2015-04-20 14:00:00
 categories: podcast freelancedad
 number: 3
-duration: 
-length: 
-mp3: 
+duration: "16:59"
+length: 19160782
+mp3: https://s3-eu-west-1.amazonaws.com/mgr2sde-mp3/fd-2015-04-21-3rd.mp3
 ---
 
 Третий выпуск, в котором я делюсь своими ощущениями от технического интервью с Amazon и рассказываю о том, как можно изучить половину Computer Science fundamentals за два месяца, а вторую — за неделю.
@@ -21,6 +21,8 @@ mp3:
 
 К слову, о быстром изучении CS fundamentals. На Coursera есть превосходные курсы [Algorithms I](https://www.coursera.org/course/algs4partI), [Algorithms II](https://www.coursera.org/course/algs4partII), [Cryptography I](https://www.coursera.org/course/crypto) и [Cryptography II](https://www.coursera.org/course/crypto2). В сумме двадцать пять недель по 8 часов загрузки в неделю. Бесплатно. Это просто смешно, но мало кто этим пользуется.
 
-Что касается изучения тонкостей каких-нибудь языков или фреймворков, то я обнаружил два неплохих ресурса: [Egghead](https://egghead.io) (хороший) и [Learnable](https://learnable.com/) (буэ). Оба стоят $14 в месяц и за эти деньги дают доступ вообще ко всем ресурсам, которые есть внутри. В марте я купил за $1 месяц доступа к Learnable, что дало мне шанс убедиться, что контент не очень хорошо фильтруется. У Egghead есть бесплатные фрагменты — они великолепны.
+Что касается изучения тонкостей каких-нибудь языков или фреймворков, то я обнаружил два неплохих ресурса: [Egghead](https://egghead.io) (хороший) и [Learnable](https://learnable.com/) (буэ). Оба стоят $14 в месяц и за эти деньги дают доступ вообще ко всем ресурсам, которые есть внутри. В марте я купил за $1 месяц доступа к Learnable, что дало мне шанс убедиться, что контент не очень хорошо фильтруется. У Egghead есть бесплатные фрагменты — они великолепны. Кроме них, существуют очень крутые [Topcoder](http://www.topcoder.com) и [Codility](https://codility.com).
 
-Кроме этого, рассказываю про легендарный пост [Ten Tips for a (Slightly) Less Awful Resume](http://steve-yegge.blogspot.ru/2007/09/ten-tips-for-slightly-less-awful-resume.html), пытаюсь упорядочить процесс составления хорошего proposal для клиента на примере Elance, делюсь No Screen Keyboard Challenge и жалуюсь на то, как тяжело управлять временем, когда дома не спит и буйствует дочь, а работать надо вот вообще прямо сейчас.
+Кроме этого, рассказываю про легендарный пост [Ten Tips for a (Slightly) Less Awful Resume](http://steve-yegge.blogspot.ru/2007/09/ten-tips-for-slightly-less-awful-resume.html).
+
+BTW, в следующем выпуске пытаюсь упорядочить процесс составления хорошего proposal для клиента на примере Elance, делюсь No Screen Keyboard Challenge и жалуюсь на то, как тяжело управлять временем, когда дома не спит и буйствует дочь, а работать надо вот вообще прямо сейчас.
