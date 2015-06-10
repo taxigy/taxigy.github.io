@@ -1,0 +1,16 @@
+---
+layout: post
+title: "О провалах"
+date: 2015-06-10 14:40:00
+categories: podcast freelancedad
+number: 5
+duration: "14:46"
+length: 9668522
+mp3: https://s3-eu-west-1.amazonaws.com/mgr2sde-mp3/fd-2015-06-10.mp3
+---
+
+Пятый выпуск подкаста, в котором я [передаю привет Тимуру](http://podcast.imvtm.ru/post/120629314201), делюсь опытом участия в контесте от [Upwork + Hackerrank](http://hackerrank.com/upwork), про отказ от Amazon и SAP, рассказываю о блоге [про бизнес behind the scenes](http://telefitness-bts.tumblr.com), про предпринимателя и его идею.
+
+Подвожу итоги, выделяя два возможных пути. Присылайте [«один»](mailto:rishatmuhametshin@gmail.com?subject=1) и голосуйте за шаг вверх+влево, или [«два»](mailto:rishatmuhametshin@gmail.com?subject=2) и голосуйте за шаг вниз+вправо.
+
+PS. Я прочитал [книгу про Новую Зеландию](http://www.amazon.com/Song-Spirits-Land-White-Cloud-ebook/dp/B00BQHQBD6/ref=sr_1_2?s=digital-text&ie=UTF8&qid=1433933579&sr=1-2&keywords=in+the+land+of+the+long+white+cloud) и даю ссылку на [мой вишлист в Амазон Бук Сторе](http://www.amazon.com/gp/registry/wishlist/1TDT30NEZZMHA/ref=cm_wl_huc_title) в честь приближающегося дня рождения.
