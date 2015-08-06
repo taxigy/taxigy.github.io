@@ -8,6 +8,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 # twitter_username: taxigy
 github_username:  taxigy
 # Build settings
-markdown: kramdown
+markdown: redcarpet
 # Misc
 license: CC-BY-CA
