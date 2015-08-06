@@ -11,10 +11,10 @@ The first thing I encountered was that I didn't exactly know how to read from ST
 
 The solution to this simple problem is, well, simple:
 
-```clojure
+{% highlight clojure %}
 (let [in (slurp *in*)]
     (println (clojure.string/split in #"\s")))
-```
+{% endhighlight %}
 
 For input
 
@@ -36,20 +36,20 @@ which means pretty much what I need.
 
 Or, in a less readable and more laconic form,
 
-```clojure
+{% highlight clojure %}
 (let [in (clojure.string/split (slurp *in*) #"\s")]
     (println in))
-```
+{% endhighlight %}
 
 Typical challenge on HackerRank defines a sequence that, in its head, has a number that represents the number of test cases (in aforementioned example, there are 2 test cases). Knowing that, it's typically useful to extract this value into a separate variable. Good thing `let` evaluates its first parameter sequentially, so this is valid code:
 
-```clojure
+{% highlight clojure %}
 (let
     [in (clojure.string/split (slurp *in*) #"\s")
     tests (first in)
     input-data (rest in)]
     (print tests input-data))
-```
+{% endhighlight %}
 
 It now outputs
 
@@ -97,14 +97,14 @@ The most dumb problem in the world. And I've spent about 40 minutes on it.
 
 The final code was
 
-```clojure
+{% highlight clojure %}
 (fn [num lst]
     (loop [head (first lst) tail (rest lst)]
         (if-not (nil? head)
             (do
                 (dotimes [i num] (println head))
                 (recur (first tail) (rest tail))))))
-```
+{% endhighlight %}
 
 It didn't look clear or beautiful to me but I just couldn't do it better. Hopefully, things will change over time, positively.
 
@@ -145,7 +145,7 @@ So, the problem can be decomposed into simple tasks:
 
 The code:
 
-```clojure
+{% highlight clojure %}
 (fn [delim lst]
     (loop [head (first lst) tail (rest lst)]
         (if-not (nil? head)
@@ -154,7 +154,7 @@ The code:
                     (println head))
                 (recur (first tail) (rest tail))))))
 
-```
+{% endhighlight %}
 
 ## Filter positions in a list
 The problem is simple, the program should filter out every second item of the list (one with an odd index):
@@ -185,14 +185,14 @@ and output:
 
 The code:
 
-```clojure
+{% highlight clojure %}
 (fn [lst]
     (loop [odd false lst lst]
         (if-not (nil? (first lst))
             (do
                 (if odd (println (first lst)))
                 (recur (not odd) (rest lst))))))
-```
+{% endhighlight %}
 
 For this problem, it took me about 5 minutes to reach the working solution. However, I was feeling that not using `let` makes the code a lot less comprehensible than it could be.
 
@@ -234,7 +234,7 @@ and output:
 
 Now, my solution is a lot like freshman's would look like, but considering I'm a Clojure novice, I don't feel bad about it (maybe about 1/4 of bad):
 
-```clojure
+{% highlight clojure %}
 (fn [lst]
     (loop [in lst out (list)]
         (if (seq in)
@@ -242,25 +242,25 @@ Now, my solution is a lot like freshman's would look like, but considering I'm a
             (print
                 (reduce str
                     (interpose "\n" out))))))
-```
+{% endhighlight %}
 
 ## Sum of odd elements
 
 The challenge was simply to return the sum of all elements of an input list that are odd. The solution is so short I felt proud of myself. However, thanks to [Clojure by Example](https://kimh.github.io/clojure-by-example/) reference:
 
-```clojure
+{% highlight clojure %}
 (fn [lst] 
     (reduce + (filter odd? lst)))
-```
+{% endhighlight %}
 
 ## List Length
 
 The challenge was to calculate the length of a list the hard way. Simple `reduce` got the job done:
 
-```clojure
+{% highlight clojure %}
 (fn [lst]
     (reduce (fn [n t] (inc n)) 0 lst))
-```
+{% endhighlight %}
 
 ## Update List
 
@@ -294,10 +294,10 @@ and output:
 
 At first, I thought of `Math.abs`. So I tried
 
-```clojure
+{% highlight clojure %}
 (fn [lst]
     (map Math/abs lst))
-```
+{% endhighlight %}
 
 but that threw with
 
@@ -308,10 +308,10 @@ Exception in thread "main" java.lang.RuntimeException: Unable to find static fie
 I'm not exactly sure why this happened, but, in a short search, I
 discovered the solution:
 
-```clojure
+{% highlight clojure %}
 (fn [lst]
     (map #(Math/abs %) lst))
-```
+{% endhighlight %}
 
 *upd: it was FIXME but then I found [an explanation](http://stackoverflow.com/questions/21753243/absolute-value-of-a-number-in-clojure#comment41125257_21753385)*
 
@@ -333,21 +333,21 @@ The problem perfectly decomposes into a set of simply solvable tasks:
 
 At first, it was a bit difficult for me to get away from for-loop imperative approach and rather switch to more mathematical methods. So I googled a bit and found great solution for both [factorial](http://stackoverflow.com/a/1663053/1287643):
 
-```clojure
+{% highlight clojure %}
 (defn factorial [n]
     (reduce * (range 1 (inc n))))
-```
+{% endhighlight %}
 
 and [exponentiation](http://stackoverflow.com/a/5058544/1287643):
 
-```clojure
+{% highlight clojure %}
 (defn exp [x n]
     (reduce * (repeat n x)))
-```
+{% endhighlight %}
 
 Next, the sum of the series is also a simple `reduce`. So the overall solution looks like this:
 
-```clojure
+{% highlight clojure %}
 (let
     [in (clojure.string/split (slurp *in*) #"\s")
     tests (read-string (first in))
@@ -364,15 +364,14 @@ Next, the sum of the series is also a simple `reduce`. So the overall solution l
                         (repeat 10 (read-string (first input-data)))
                         (iterate inc 0))))
             (recur (rest input-data)))))
-
-```
+{% endhighlight %}
 
 It was accepted by HackerRank and got 100% score (20.00 pts), although its run-time is a bit too long for such a simple solution.
 
 By the way, there are really great solutions submitted by other participants, [one in
 Scala](https://codepair.hackerrank.com/paper/k0vG9BVx?b=eyJyb2xlIjoiY2FuZGlkYXRlIiwibmFtZSI6InJpc2hhdCIsImVtYWlsIjoicmlzaGF0bXVoYW1ldHNoaW5AZ21haWwuY29tIn0%3D) and [one in Clojure](https://codepair.hackerrank.com/paper/TMZwdChN?b=eyJyb2xlIjoiY2FuZGlkYXRlIiwibmFtZSI6InJpc2hhdCIsImVtYWlsIjoicmlzaGF0bXVoYW1ldHNoaW5AZ21haWwuY29tIn0%3D), the latter deserves its place here:
 
-```clojure
+{% highlight clojure %}
 (doseq [i (range (Integer/parseInt (read-line)))]
   (println
     ((fn [x]
@@ -381,7 +380,7 @@ Scala](https://codepair.hackerrank.com/paper/k0vG9BVx?b=eyJyb2xlIjoiY2FuZGlkYXRl
           (take 10
             (iterate (fn [[r k]] [(/ (* r x) k) (inc k)]) [1.0 1])))))
               (Double/parseDouble (read-line)))))
-```
+{% endhighlight %}
 
 ## Area Under Curves and Volume of Revolving a Curve
 
@@ -401,7 +400,7 @@ However, I found more, and those were more useful:
 
 So, it took me 2 pomodoros to do research and reach a half-working solution:
 
-```clojure
+{% highlight clojure %}
 (defn exp [x e]
     (reduce * (repeat e x)))
 
@@ -442,7 +441,7 @@ So, it took me 2 pomodoros to do research and reach a half-working solution:
     b (nth ab 1)]
     (println
         (solve-flat multipliers powers a b)))
-```
+{% endhighlight %}
 
 For the sample input 
 
@@ -493,7 +492,7 @@ So I had to add volume calculation. A very brief googling got me to the [calculu
 
 The code then was:
 
-```clojure
+{% highlight clojure %}
 (defn exp [x e]
     (reduce * (repeat e x)))
 
@@ -550,7 +549,7 @@ The code then was:
     (println
         (solve-flat multipliers powers a b)
         (solve-volume multipliers powers a b)))
-```
+{% endhighlight %}
 
 But it got me only [18 points](https://www.hackerrank.com/challenges/area-under-curves-and-volume-of-revolving-a-curv/submissions/code/12927134) out of possible 30. Kinda sad. 2 out of 5 tests failed.
 
