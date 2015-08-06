@@ -1,3 +1,10 @@
+---
+layout: post
+title: "How I learned Clojure while solving easy coding challenges"
+date: 2015-08-03
+categories: learning
+---
+
 I decided to learn Clojure (and therefore ClojureScript, since the two intersect significantly) by doing. I've already done that with Javascript a peculiar, having it proven a good deal, so I'm repeating it again. I mean HackerRank challenges.
 
 The first thing I encountered was that I didn't exactly know how to read from STDIN and parse input, pass it into a function and split into substrings in particular.
