@@ -1,96 +1,46 @@
-%vertical-padding {
-    padding: $spacing-unit / 6 0;    
-}
-
 /**
  * Site header
  */
 .site-header {
-    font-size: $base-font-size / 1.15;
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    position: relative;
+    // font-family: $header-font-family;
+    // font-size: $base-font-size / 1.15;
     margin-bottom: $spacing-unit;
-    background-color: lighten($background-color, 1%);
-
-    @extend %vertical-padding;
+    height: 1%; //FIXME
 }
-
-.site-title {
-    letter-spacing: -1px;
-    float: left;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
-}
-
-.site-nav {
-    float: right;
-
-    .page-link {
-        color: $text-color;
-
-        &:not(:first-child) {
-            margin-left: 20px;
-        }
-    }
-}
-
 
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
-    padding-top: $spacing-unit / 2;
-    @extend %vertical-padding;
-}
+    font-size: $base-font-size;
+    border-top: 1px solid $subtle-color-light;
+    // background-color: $background-color-alter;
+    padding: $spacing-unit / 2 $spacing-unit $spacing-unit / 2;
+    margin-top: $spacing-unit * 1.33;
 
-.contact-list,
-.pages-list {
-    list-style: none;
-    margin-left: 0;
-}
-
-.footer-col-wrapper {
-    font-size: 15px;
-    color: $grey-color;
-    margin-left: -$spacing-unit / 2;
-    @extend %clearfix;
-}
-
-.footer-col {
-    font-size: $base-font-size / 1.25;
-    float: left;
-    padding-left: $spacing-unit / 2;
-    margin-bottom: $spacing-unit / 2;
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-
-    > p {
-        margin-bottom: $spacing-unit / 6;
+    @include media-query($sm) {
+        font-size: $base-font-size * 1.5;
     }
 
-    > ul {
-        margin-bottom: 0;
+    ul {
+        list-style-type: none;
+        display: block;
+        // width: $xs;
+        margin: 0 auto;
+        text-align: center;
 
-        > li {
-            margin-bottom: $spacing-unit / 12;
-        }
-    }
-
-    @include media-query($on-palm) {
-        float: none;
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-
-        > ul li {
+        li {
             display: inline-block;
             padding: 0 $spacing-unit / 4;
-            background-color: $brand-color-light;
+
+            a {
+                color: $text-color;
+
+                &:active {
+                    color: $accent-color;
+                }
+            }
         }
     }
 }
@@ -100,7 +50,7 @@
  * Page content
  */
 .page-content {
-    @include media-query($on-palm) {
+    @include media-query($sm) {
     }
 }
 
@@ -110,11 +60,6 @@
 
     > li {
     }
-}
-
-.post-meta {
-    font-size: $small-font-size;
-    color: $grey-color;
 }
 
 .post-link {
@@ -130,6 +75,7 @@
  * Posts
  */
 .post-header {
+    // font-family: $header-font-family;
     font-size: $base-font-size;
 }
 
@@ -138,13 +84,13 @@
     letter-spacing: -1px;
     line-height: $base-line-height / 1.25;
 
-    @include media-query($on-laptop) {
+    @include media-query($md) {
         font-size: $base-font-size * 1.5;
     }
 }
 
 .post-meta {
-    color: $grey-color;
+    color: $subtle-color;
     font-weight: $base-font-weight * 3;
     margin-bottom: $spacing-unit / 2;
 }
@@ -154,28 +100,48 @@
 }
 
 .post-content {
-    h2 {
-        font-size: $base-font-size * 1.5;
+    h1, h2, h3 {
+        font-family: $header-font-family;
+        font-weight: $header-font-weight;
+        color: $text-color-dark;
+        letter-spacing: -0.05em;
+        @extend %divide-header-from-content;
+    }
 
-        @include media-query($on-laptop) {
-            font-size: $base-font-size * 1.25;
+    h4, h5, h6 {
+        display: none; // one who can't arrange content within the hierarchy of three levels should be punished
+    }
+
+    h1 {
+        font-size: $header-font-size;
+        line-height: $header-line-height;
+        margin-bottom: $spacing-unit;
+
+        @include media-query($sm) {
+            font-size: $header-font-size * 1.5;
+            line-height: $header-line-height / 1.5 * 1.333;
+            margin-bottom: $spacing-unit * 1.15;
+        }
+    }
+
+    h2 {
+        font-size: $header-font-size / 1.12;
+        line-height: $header-line-height * 1.12;
+        letter-spacing: -0.025em;
+
+        @include media-query($sm) {
+            font-size: $header-font-size * 1.5 / 1.2;
+            line-height: $header-line-height / 1.5 * 1.2 * 1.333;
         }
     }
 
     h3 {
-        font-size: $base-font-size * 1.25;
+        font-size: $header-font-size / 1.25;
+        line-height: $header-line-height * 1.25;
+        letter-spacing: -0.015em;
 
-        @include media-query($on-laptop) {
-            font-size: $base-font-size;
-            font-weight: $base-font-weight;
-        }
-    }
-
-    h4 {
-        font-size: $base-font-size * 1.4;
-
-        @include media-query($on-laptop) {
-            font-size: $base-font-size * 1.2;
+        @include media-query($sm) {
+            font-size: $header-font-size * 1.5 / 1.44;
         }
     }
 }

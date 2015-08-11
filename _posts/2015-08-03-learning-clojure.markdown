@@ -3,11 +3,19 @@ layout: post
 title: "How I learned Clojure while solving easy coding challenges"
 date: 2015-08-03
 categories: learning
+author: Rishat Muhametshin
 ---
 
-I decided to learn Clojure (and therefore ClojureScript, since the two intersect significantly) by doing. I've already done that with Javascript a peculiar, having it proven a good deal, so I'm repeating it again. I mean HackerRank challenges.
+I decided to learn Clojure (and therefore ClojureScript, since the two intersect significantly) by doing. Who'd ever blame me with that?
 
-The first thing I encountered was that I didn't exactly know how to read from STDIN and parse input, pass it into a function and split into substrings in particular.
+I chose HackerRank as a platform for practice. There are other choices, of course, but I love HackerRank for two reasons:
+
+* it offers a REPL-style flow: I write code, run it against some tests, get results instantly,
+* before the code is submitted, I can test it against whatever cases I may imagine for as many times I need.
+
+So I started from [Introduction section within Functional Programming domain](https://www.hackerrank.com/domains/fp/intro).
+
+The first thing I encountered was that I didn't exactly know how to read from STDIN in Clojure. I also didn't know how to parse input string or stream, pass it into a function and split into substrings in particular.
 
 The solution to this simple problem is, well, simple:
 
@@ -364,12 +372,12 @@ Next, the sum of the series is also a simple `reduce`. So the overall solution l
                         (repeat 10 (read-string (first input-data)))
                         (iterate inc 0))))
             (recur (rest input-data)))))
+
 ```
 
 It was accepted by HackerRank and got 100% score (20.00 pts), although its run-time is a bit too long for such a simple solution.
 
-By the way, there are really great solutions submitted by other participants, [one in
-Scala](https://codepair.hackerrank.com/paper/k0vG9BVx?b=eyJyb2xlIjoiY2FuZGlkYXRlIiwibmFtZSI6InJpc2hhdCIsImVtYWlsIjoicmlzaGF0bXVoYW1ldHNoaW5AZ21haWwuY29tIn0%3D) and [one in Clojure](https://codepair.hackerrank.com/paper/TMZwdChN?b=eyJyb2xlIjoiY2FuZGlkYXRlIiwibmFtZSI6InJpc2hhdCIsImVtYWlsIjoicmlzaGF0bXVoYW1ldHNoaW5AZ21haWwuY29tIn0%3D), the latter deserves its place here:
+By the way, there are really great solutions submitted by other participants, [one in Scala](https://codepair.hackerrank.com/paper/k0vG9BVx?b=eyJyb2xlIjoiY2FuZGlkYXRlIiwibmFtZSI6InJpc2hhdCIsImVtYWlsIjoicmlzaGF0bXVoYW1ldHNoaW5AZ21haWwuY29tIn0%3D) and [one in Clojure](https://codepair.hackerrank.com/paper/TMZwdChN?b=eyJyb2xlIjoiY2FuZGlkYXRlIiwibmFtZSI6InJpc2hhdCIsImVtYWlsIjoicmlzaGF0bXVoYW1ldHNoaW5AZ21haWwuY29tIn0%3D), the latter deserves its place here:
 
 ```clojure
 (doseq [i (range (Integer/parseInt (read-line)))]
@@ -553,3 +561,13 @@ The code then was:
 
 But it got me only [18 points](https://www.hackerrank.com/challenges/area-under-curves-and-volume-of-revolving-a-curv/submissions/code/12927134) out of possible 30. Kinda sad. 2 out of 5 tests failed.
 
+It's a shame that I haven't come up with the right conclusion so I bought input and output samples for one of the tests, however only input was enough. The point was, I made up exponentiation function for only positive powers, e.g. `x^e` for `e >= 0`. So the next step was to enhance the exponentiation function to allow it calculate values for negative powers:
+
+```clojure
+(defn exp [x e]
+    (if (> e 0)
+        (reduce * (repeat e x))
+        (reduce / 1 (repeat (- e) x))))
+```
+
+This worked perfectly. [20 out of 20 points](https://www.hackerrank.com/challenges/area-under-curves-and-volume-of-revolving-a-curv/submissions/code/12936641).

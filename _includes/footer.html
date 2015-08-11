@@ -1,27 +1,24 @@
 <footer class="site-footer">
-  <div class="wrapper">
-    <div class="footer-col-wrapper">
-      <div class="footer-col">
-        <p>Contact:</p>
-        <ul class="contact-list">
-          <li>
-            <a href="mailto:{{ site.email }}">Email</a>
-          </li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <p>More:</p>
-        <ul class="pages-list">
-          {% for page in site.pages %}
-          {% if page.title and page.skip != 1 %}
-          <li>
-            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-          </li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-
-  </div>
+    <ul>
+        <li>
+            <a href="">
+                <i class="fa fa-github"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-stack-overflow"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-linkedin"></i>
+            </a>
+        </li>
+        <li>
+            <a href="">
+                <i class="fa fa-twitter"></i>
+            </a>
+        </li>
+    </ul>
 </footer>

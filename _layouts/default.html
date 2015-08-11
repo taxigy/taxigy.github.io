@@ -1,20 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-
-  {% include head.html %}
-
-  <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-    {% include footer.html %}
-
-  </body>
-
+    {% include head.html %}
+    <body>
+        {% include header.html %}
+        <div class="wrapper">
+            {{ content }}
+        </div>
+        {% include footer.html %}
+        {% include ga.html %}
+        {% include typekit.html %}
+    </body>
 </html>
