@@ -3,7 +3,7 @@ layout: post
 title: "How I learned Clojure while solving easy coding challenges"
 date: 2015-08-03
 categories: learning
-author: Rishat Muhametshin
+crossposted: logdown
 ---
 
 I decided to learn Clojure (and therefore ClojureScript, since the two intersect significantly) by doing. Who'd ever blame me with that?
