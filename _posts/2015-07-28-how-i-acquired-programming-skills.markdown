@@ -9,7 +9,7 @@ I had been working on a business side of software development for over 8 years, 
 
 A little disclaimer: I got my BS in Computer Science back in 2009, so my knowledge wasn't completely zero and, at the starting point, was quite fresh. On the other hand, I had a little handicap: I was a young father with old brain. But who'd ever not give a try, right?
 
-# Why should a project manager bother to code
+## Why should a project manager bother to code
 
 Being able to code is a useful skill for a lower-bound manager (e.g. project manager). It helps think more practically about budget, project scope, cost estimations and their projections on the effort of team members. Before that, one is like "Who'd ever spend 40 hours on that? Let it be 8!". After that, one is like "Okay, you say you need 40 hours but do you dedicate this time solely to execution of the task or do you include initial research and pre-merge testing, too?".
 
@@ -17,7 +17,7 @@ You see, it's a good skill to put things in their places. It makes a manager a b
 
 Of course, a project manager, augmented with coding skills, may be risky. This role requires supervising progress in a bigger context. Too much details equals too much distraction, and distraction means less focused commitment. So I'd recommend either not overdoing it or admitting that the life will never be the same (so will position).
 
-# How would a project manager evolve the coding skills
+## How would a project manager evolve the coding skills
 
 If you asked this question ten years ago, it would sound serious. Today, however, it's a shame to even let it out of mouth. Although, the problem inverted, and so it should be addressed the proper way.
 
@@ -105,7 +105,7 @@ Like,
 
 Just google "*any language* fiddle".
 
-# Too much
+## Too much, tho?
 
 Getting into new field isn't easy. I'm feeling a lot like I felt 10 years ago as a first-year student. The problem is, I don't have the advantages of being a student anymore. As a student and also a young person, I could sleep less than 5 hours for months in a row without productivity loss, and I wasn't very busy with a family, full-time job, side gigs and other inevitable activities (however, I had always succeeded at burning time for useless deeds). So I basically use the simple formula I've come up with after a considerable period of time and continuous effort:
 
@@ -115,7 +115,7 @@ Getting into new field isn't easy. I'm feeling a lot like I felt 10 years ago as
 
 This helps me stay sane and not aspire after quick results.
 
-# The next step
+## The next step
 
 There are many alternative directions that, more or less, require my attention and presence. Among them,
 

@@ -11,7 +11,7 @@ My first impulse was — guess what — to ask parents to buy me a computer. I d
 
 Well, I asked. I still remember how I made a pitch for the first time in my life. Before that, I'd barely cared. If I'd asked something and they wouldn't have given it, it wasn't a huge problem. A PC was. So I pulled myself together and applied all my wits to compose the first compelling speech. It worked.
 
-# We're going to have more apps, and this won't stop nor decline soon
+## We're going to have more apps, and this won't stop nor decline soon
 
 The next thing I remember mostly clearly is my feeling that, soon enough, there won't be anything a human won't be able to do with the help of a computer. Or, to be precise with that human, won't be *willing* to do. I'm not talking about office employees who are not willing to calculate taxes and approve credit applications without passingly checking into Facebook. I'm talking about people who, for centuries, worked solely with their hands and backs, and what's happening nowadays is just a bare disruption of their approach. I'd say the progress collides with these people's reluctance and resistance but it's out of scope.
 
@@ -19,7 +19,7 @@ Data and information, computer vision, artificial neural networks. Robots are ev
 
 So, I basically agree with a short and modern claim: *there's an app for that.* Or will appear shortly, if the problem needs to be solved.
 
-# The apps won't be developed but rather composed
+## The apps won't be developed but rather composed
 
 Fast forward many years, I have been walking over an amazing career, which practically may be considered as one gone not so far from the beginning, and I do all things information, applied computer science, and enterprise software. But several years ago I started noticing a very special something in the wind.
 
@@ -34,7 +34,7 @@ Just think about what apps you stick to most, and I believe you'll confirm.
 
 It may not seem right, like one may reject an idea that what they need is a bunch of multitools to compose every single tool they want. But in software world, this method seems to work and not quite surely beaten by any other approach or concept.
 
-# Apps need physical representation to become even more helpful
+## Apps need physical representation to become even more helpful
 
 I once scrolled over 9gag and saw a picture of a Samsung Note smartphone attached to a long handle so the result was a form of a shovel. Well, the idea is true, but how it was expressed isn't.
 
@@ -44,13 +44,13 @@ Engineering of physical things is tough and expensive (opposed to apps, however 
 
 But we'll still need apps, of course. And those still will be able to be composed rather than developed from scratch. And it's amazing.
 
-# So, what's the conclusion?
+## So, what's the conclusion?
 
 The whole model "find a problem, make an app, boom! problem solved" is too simplistic. Humanity has proved to love simplifications over complex things (except, maybe, ancient Chinese philosophers), and this thing hardly changes. So I believe there's a lot behind that I just cannot see. But in general, and for deterministic problems it's applicable. And, for example, growing a field of wheat is a quite deterministic problem.
 
 So, applying a simple model, one could claim that almost everything can be reduced to an app. Not entirely everything, of course, but considerable majority of problems.
 
-# A piece of advice (for my younger self)
+## A piece of advice (for my younger self)
 
 I don't think big often. This is not bad. And I certainly wouldn't give an advice to anyone to think big, rather than to think *bigger.* Just a level or two higher than normal would be fine. It's safe for one's brain and it's precisely what other big-thinking-people around expect.
 

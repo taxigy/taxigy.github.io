@@ -5,6 +5,8 @@ date: 2015-08-11
 crossposted: svbtle
 ---
 
+In a role-playing game, the player faces a choice: should the character develop more skills or deeper skills? Skill points are always limited. In learning, it's the same. You always have less resources than it's desirable and sometimes even necessary to finish all the tasks perfectly. So, in an oversimplificated model, there are two alternatives: go broad or go deep.
+
 # Coding challenges and contests: breadth
 There are various coding challenges out there. I'd reduce them into two major categories: "solve it fast" and "pretend it's a product".
 
