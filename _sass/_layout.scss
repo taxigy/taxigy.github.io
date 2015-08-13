@@ -2,10 +2,30 @@
  * Site header
  */
 .site-header {
-    // font-family: $header-font-family;
-    // font-size: $base-font-size / 1.15;
-    margin-bottom: $spacing-unit;
-    height: 1%; //FIXME
+    display: block;
+    width: 100%;
+    margin: $spacing-unit auto;
+
+    a, a:active, a:visited {
+        color: $text-color; 
+        text-decoration: none;           
+    }
+
+    h2 {
+        font-family: $base-font-family;
+        font-size: $base-font-size;
+        font-weight: 500;
+        line-height: $base-line-height / 1.5;
+        letter-spacing: -0.09em;
+        color: $text-color;
+    }
+
+    .userpic {
+    }
+
+    .center {
+        text-align: center;
+    }
 }
 
 

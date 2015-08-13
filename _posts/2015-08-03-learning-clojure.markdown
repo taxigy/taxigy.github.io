@@ -65,11 +65,11 @@ It now outputs
 2 (4 3 -1 -3 4 2 4 2 0 -1 2 1)
 ```
 
-# HackerRank challenges
+## HackerRank challenges
 
 So here go some interesting (at the beginner level) challenges that I'd been puzzling over for relative long time, mostly because of lack of knowledge of `clojure.core` API.
 
-## List replication
+### List replication
 The problem is to output values from the input list `N` times each, `N` given as the first element of the input:
 
 > Given a list repeat each element of the list n times. The input and output portions will be handled automatically by the grader. You need to write a function with the recommended method signature.
@@ -116,7 +116,7 @@ The final code was
 
 It didn't look clear or beautiful to me but I just couldn't do it better. Hopefully, things will change over time, positively.
 
-## Filter array
+### Filter array
 The approach was very similar to the previous problem. This one is defined as:
 
 > Filter a given array of integers and leave only that values which are less than a specified value X. The integers in the output should be in the same sequence as they were in the input. You need to write a function with the recommended method signature for the languages mentioned below. For rest of language you have to write complete code.
@@ -164,7 +164,7 @@ The code:
 
 ```
 
-## Filter positions in a list
+### Filter positions in a list
 The problem is simple, the program should filter out every second item of the list (one with an odd index):
 
 > For a given list with N integers, return a new list removing the elements at odd positions.
@@ -204,7 +204,7 @@ The code:
 
 For this problem, it took me about 5 minutes to reach the working solution. However, I was feeling that not using `let` makes the code a lot less comprehensible than it could be.
 
-## Reverse a list
+### Reverse a list
 
 This one happened to be tricky for me, since I don't know much of Clojure's standard library. The `clojure.string` namespace seems to be deprecated for HackerRank FP challenges so I had to implement my own `join`, too.
 
@@ -252,7 +252,7 @@ Now, my solution is a lot like freshman's would look like, but considering I'm a
                     (interpose "\n" out))))))
 ```
 
-## Sum of odd elements
+### Sum of odd elements
 
 The challenge was simply to return the sum of all elements of an input list that are odd. The solution is so short I felt proud of myself. However, thanks to [Clojure by Example](https://kimh.github.io/clojure-by-example/) reference:
 
@@ -261,7 +261,7 @@ The challenge was simply to return the sum of all elements of an input list that
     (reduce + (filter odd? lst)))
 ```
 
-## List Length
+### List Length
 
 The challenge was to calculate the length of a list the hard way. Simple `reduce` got the job done:
 
@@ -270,7 +270,7 @@ The challenge was to calculate the length of a list the hard way. Simple `reduce
     (reduce (fn [n t] (inc n)) 0 lst))
 ```
 
-## Update List
+### Update List
 
 The caption isn't very clear, the problem statement is:
 
@@ -323,7 +323,7 @@ discovered the solution:
 
 *upd: it was FIXME but then I found [an explanation](http://stackoverflow.com/questions/21753243/absolute-value-of-a-number-in-clojure#comment41125257_21753385)*
 
-## Evaluating e^x
+### Evaluating e^x
 
 There's a function `e^x` that is defined as a series:
 
@@ -390,7 +390,7 @@ By the way, there are really great solutions submitted by other participants, [o
               (Double/parseDouble (read-line)))))
 ```
 
-## Area Under Curves and Volume of Revolving a Curve
+### Area Under Curves and Volume of Revolving a Curve
 
 The [problem](https://www.hackerrank.com/challenges/area-under-curves-and-volume-of-revolving-a-curv) was, given a function, to calculate its definite integral.
 
