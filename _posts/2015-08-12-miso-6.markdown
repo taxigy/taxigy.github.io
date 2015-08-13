@@ -12,7 +12,7 @@ mp3: https://s3-eu-west-1.amazonaws.com/mgr2sde-mp3/miso-6.mp3
 Шестой выпуск подкаста. Перемены («я разворачиваюсь»), люди, начинания, новости:
 
 * о парне, который тоже хочет, но ничего не делает,
-* о [местно Slack-руме](http://izhit.slack.com),
+* о [местном Slack-руме](http://izhit.slack.com),
 * о моей миссии в этой жизни на этой планете (патетично),
 * о современных блог-платформах для клёвых программистов,
 * о шрифтах и о [Comic Sans](http://workplace.stackexchange.com/questions/50702/how-do-i-tell-my-boss-to-not-use-comic-sans-as-their-main-email-typeface?newsletter=1&nlcode=276881%7cbb8c),
