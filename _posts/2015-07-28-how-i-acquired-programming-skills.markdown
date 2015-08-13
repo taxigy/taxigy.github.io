@@ -2,6 +2,7 @@
 layout: post
 title: "How I, a project manager, have acquired programming skills"
 date: 2015-07-28
+categories: coding
 crossposted: svbtle
 ---
 

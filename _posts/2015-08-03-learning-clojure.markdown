@@ -2,7 +2,7 @@
 layout: post
 title: "How I learned Clojure while solving easy coding challenges"
 date: 2015-08-03
-categories: learning
+categories: coding
 crossposted: logdown
 ---
 

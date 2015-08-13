@@ -1,26 +1,19 @@
 ---
 layout: default
-permalink: /posts/
+permalink: /
 ---
-
-<div class="home">
-
-  <!-- <h1 class="page-heading">Posts</h1> -->
-
-  <ul class="post-list">
+<ul class="post-list">
     {% for post in site.posts %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        {% if post.excerpt %}
-        <p class="post-link-excerpt">{{ post.excerpt }}</p>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-
-  <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
-
-</div>
+        {% unless post.categories contains "podcast" or post.skip %}
+        <li>
+            <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+            <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+            {% if post.excerpt %}
+                <p class="post-link-excerpt">{{ post.excerpt }}</p>
+            {% endif %}
+        </li>
+    {% endunless %}
+{% endfor %}
+</ul>

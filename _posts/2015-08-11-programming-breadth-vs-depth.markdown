@@ -2,6 +2,7 @@
 layout: post
 title: "Programming languages: breadth vs depth"
 date: 2015-08-11
+categories: coding
 crossposted: svbtle
 ---
 

@@ -2,7 +2,8 @@
 layout: post
 title:  "Teaching people project management"
 date:   2015-03-25 14:11:30
-categories: teaching
+categories: management
+skip: yes
 ---
 
 Few weeks ago, I was asked to give several lectures for the new program run by a local organization for entrepreneurship development, Center for Young Entrepreneur. The primary goal this program aims at is making people able to boost their carreer or find a new job that requires a skill set extended to what they are able to do now. For this program, several trending directions were taken, project management among them. Since I've got some experience in both project management and teaching people, and this activity wouldn't take much time, I accepted the offer and set my hands to preparation process.

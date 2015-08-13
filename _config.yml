@@ -5,7 +5,7 @@ email: rishatmuhametshin@gmail.com
 description: No BS.
 baseurl: "" # the subpath of your site, e.g. /blog/
 # url: "http://yourdomain.com" # the base hostname & protocol for your site
-# twitter_username: taxigy
+twitter: taxigy
 github_username:  taxigy
 # Build settings
 markdown: redcarpet

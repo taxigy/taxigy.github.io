@@ -2,6 +2,7 @@
 layout: post
 title: "Everything is an app"
 date: 2015-07-15
+categories: future
 crossposted: svbtle
 ---
 
