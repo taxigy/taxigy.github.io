@@ -3,7 +3,6 @@ layout: post
 title: "Image tint, gradient overlay, and some text on top of it"
 date: 2015-08-17
 categories: coding
-crossposted: svbtle
 ---
 
 A visual solution which is employed broadly around the web is to take an image, darken it, then lay a little more darkening gradient, and then put some white text on top of it. Here's a snippet that does exactly this thing.
