@@ -22,7 +22,7 @@ $small-font-size:   $base-font-size * 0.8;
 // Accents
 $accent-color: #0e9d09;
 $accent-color-light: lighten($accent-color, 45%);
-$accent-color-dark: darken($accent-color, 15%);
+$accent-color-dark: darken($accent-color, 5%);
 
 $subtle-color: rgba(darken($background-color, 50%), 0.33);
 $subtle-color-light: lighten($subtle-color, 45%);

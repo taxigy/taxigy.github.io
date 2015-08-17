@@ -66,7 +66,8 @@
             a {
                 color: $text-color;
 
-                &:active {
+                &:active,
+                &:hover {
                     color: $accent-color;
                 }
             }
@@ -129,7 +130,8 @@
 
 .post-meta {
     color: $subtle-color;
-    font-weight: $base-font-weight * 3;
+    font-size: $base-font-size / 1.1;
+    font-family: $header-font-family;
     margin-bottom: $spacing-unit / 2;
 }
 
@@ -138,11 +140,12 @@
 }
 
 .post-content {
-    h1, h2, h3 {
+    %header {
         font-family: $header-font-family;
         font-weight: $header-font-weight;
         color: $text-color-dark;
         letter-spacing: -0.05em;
+
         @extend %divide-header-from-content;
     }
 
@@ -155,6 +158,8 @@
         line-height: $header-line-height;
         margin-bottom: $spacing-unit;
 
+        @extend %header;
+
         @include media-query($sm) {
             font-size: $header-font-size * 1.5;
             line-height: $header-line-height / 1.5 * 1.333;
@@ -166,6 +171,9 @@
         font-size: $header-font-size / 1.12;
         line-height: $header-line-height * 1.12;
         letter-spacing: -0.025em;
+        color: $text-color-light;
+
+        @extend %header;
 
         @include media-query($sm) {
             font-size: $header-font-size * 1.5 / 1.2;
@@ -177,6 +185,9 @@
         font-size: $header-font-size / 1.25;
         line-height: $header-line-height * 1.25;
         letter-spacing: -0.015em;
+        color: $text-color-light;
+
+        @extend %header;
 
         @include media-query($sm) {
             font-size: $header-font-size * 1.5 / 1.44;
