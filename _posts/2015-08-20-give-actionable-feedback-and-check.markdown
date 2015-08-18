@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Give actionable feedback, then subtly check"
-date: 2015-08-17
+date: 2015-08-20
 categories: people
 ---
 
