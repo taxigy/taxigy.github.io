@@ -207,7 +207,7 @@ It was so simple that, at first, I thought the TLE would happen again. It wouldn
 
 ## Filter Elements
 
-This task is marked as *easy* but I'm sure it's a bit harder than other easy problems. So, given a list, output a (shorter) list of elements that occur no less that N times, order preserved. For example, given
+This task is marked as *easy* but I'm sure it's a bit harder than other easy problems. So, given a list, output a (shorter) list of distinct elements such that those occur in original list no less that N times, order preserved. For example, given
 
 ```
 5 4 3 2 1 1 2 3 4 5
