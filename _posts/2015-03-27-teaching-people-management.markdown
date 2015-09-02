@@ -2,7 +2,7 @@
 layout: post
 title:  "Teaching people project management"
 date:   2015-03-25 14:11:30
-categories: management
+categories: education
 skip: yes
 ---
 

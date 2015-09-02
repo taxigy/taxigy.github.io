@@ -2,7 +2,7 @@
 layout: post
 title: "Give actionable feedback, then subtly check"
 date: 2015-08-20
-categories: people
+categories: education
 ---
 
 People are good at receiving feedback if it is given in a proper way. One way to do is to give actionable feedback. It means a person who receives it should, after the exchange is over, be clear and confident about what are next steps to take to implement the new knowledge.
