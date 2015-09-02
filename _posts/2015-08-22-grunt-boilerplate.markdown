@@ -54,3 +54,13 @@ $ grunt watch
 ```
 
 and start editing. Every `.scss` file within `src` folder will be picked up and converted, all dependencies (imports) resolved.
+
+## Just convert styles, and start doing it in a minute
+
+To make it even simpler, I composed a simple Yeoman generator [`generator-grunt-sass`](https://github.com/taxigy/generator-grunt-sass) that deploys valid `package.json` and `Gruntfile.js`, so the workflow here is simple:
+
+```bash
+$ yo grunt-sass
+$ npm install
+$ grunt watch
+```
