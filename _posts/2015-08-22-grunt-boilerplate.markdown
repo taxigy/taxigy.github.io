@@ -14,8 +14,7 @@ The good thing is that you don't need a whole Node project for such a simple tas
 The setup:
 
 ```bash
-$ npm install grunt grunt-contrib-sass --save-dev
-$ npm install grunt-contrib-watch --save
+$ npm install grunt grunt-contrib-sass grunt-contrib-watch --save-dev
 ```
 
 The config:
