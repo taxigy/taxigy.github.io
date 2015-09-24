@@ -35,7 +35,7 @@ $header-font-weight: 900;
 $header-line-height: $base-line-height * $base-font-size / $header-font-size;
 
 // Code
-$code-font-family: "Menlo", monospace, sans-serif;
+$code-font-family: "Hack", "Menlo", monospace, sans-serif;
 $code-font-size: $base-font-size / 1.4; //FIXME
 $code-font-weight: 300;
 $code-line-height: $base-line-height * $base-font-size / $code-font-size; //FIXME
