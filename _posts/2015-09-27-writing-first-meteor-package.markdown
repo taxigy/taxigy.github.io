@@ -35,7 +35,7 @@ There will be `package.js`, the file that is invoked by Meteor every time the pa
 
 ## So, what is my cool package for?
 
-I was working on a project that employed Meteor as the primary platform and required integration with PayLane, a European payment processing service. Despite the whole processing experience, from the app's experience, is just two redirects and a form between them, I decided to make a stand-alone package and develop it separately, simply to train the skill and see if anybody else finds it useful.
+I was working on a project that employed Meteor as the primary platform and required integration with PayLane, a European payment processing service. Despite the whole processing experience, from the app's point of view, is just two redirects and a form between them, I decided to make [a stand-alone package for that](http://github.com/taxigy/meteor-paylane) and develop it separately, simply to train the skill and see if anybody else finds it useful.
 
 So, the workflow was quite simple, in just 5 (sometimes not as easy) steps:
 
