@@ -1,10 +1,10 @@
 # Site settings
-title: taxigy.github.io
+title: "Manager in, engineer out."
 author: Rishat Muhametshin
 email: rishatmuhametshin@gmail.com
-description: No BS.
+description: "Manager in, engineer out. Simple reflections of a person with management experience who moves in completely new direction to become a software engineer (hopefully, a decent one)."
 baseurl: "" # the subpath of your site, e.g. /blog/
-# url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://specular.space" # the base hostname & protocol for your site
 # social profiles / usernames:
 twitter: taxigy
 medium: taxigy
