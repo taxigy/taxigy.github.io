@@ -1,0 +1,12 @@
+---
+layout: post
+title: "О том, как будет круто на Банкафоне"
+date: 2015-11-03 14:15:00
+categories: podcast freelancedad
+number: 10
+duration: "26:17"
+length: 35124873
+mp3: https://s3-eu-west-1.amazonaws.com/mgr2sde-mp3/miso-10.mp3
+---
+
+Продолжаю быть безработным и готовиться к поездке на Банкафон. Говорю о деньгах. Ценность этого выпуска близка к нулю. Не слушайте.
