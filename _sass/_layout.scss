@@ -2,39 +2,39 @@
  * Site header
  */
 .site-header {
-    display: block;
-    width: 100%;
-    margin: $spacing-unit auto $spacing-unit * 2;
-    padding: $spacing-unit / 4 0;
+  display: block;
+  width: 100%;
+  margin: $spacing-unit auto $spacing-unit * 2;
+  padding: $spacing-unit / 4 0;
+
+  @include media-query($sm) {
+    margin: $spacing-unit * 4 auto $spacing-unit * 4;
+  }
+
+  a, a:active, a:visited {
+    color: $text-color-light; 
+    text-decoration: none;           
+  }
+
+  h2 {
+    font-family: $base-font-family;
+    font-size: $base-font-size / 1.2;
+    font-weight: 300;
+    line-height: $base-line-height / 1.5;
+    letter-spacing: -0.07em;
+    color: $text-color-light;
 
     @include media-query($sm) {
-        margin: $spacing-unit * 4 auto $spacing-unit * 4;
-    }
+      font-size: $base-font-size;
+      }
+  }
 
-    a, a:active, a:visited {
-        color: $text-color-light; 
-        text-decoration: none;           
-    }
+  .userpic {
+  }
 
-    h2 {
-        font-family: $base-font-family;
-        font-size: $base-font-size / 1.2;
-        font-weight: 300;
-        line-height: $base-line-height / 1.5;
-        letter-spacing: -0.07em;
-        color: $text-color-light;
-
-        @include media-query($sm) {
-            font-size: $base-font-size;
-        }
-    }
-
-    .userpic {
-    }
-
-    .center {
-        text-align: center;
-    }
+  .center {
+    text-align: center;
+  }
 }
 
 
@@ -42,37 +42,37 @@
  * Site footer
  */
 .site-footer {
-    font-size: $base-font-size;
-    border-top: 1px solid $subtle-color-light;
-    // background-color: $background-color-alter;
-    padding: $spacing-unit / 2 $spacing-unit $spacing-unit / 2;
-    margin-top: $spacing-unit * 1.33;
+  font-size: $base-font-size;
+  border-top: 1px solid $subtle-color-light;
+  // background-color: $background-color-alter;
+  padding: $spacing-unit / 2 $spacing-unit $spacing-unit / 2;
+  margin-top: $spacing-unit * 1.33;
 
-    @include media-query($sm) {
-        font-size: $base-font-size * 1.5;
-    }
+  @include media-query($sm) {
+    font-size: $base-font-size * 1.5;
+  }
 
-    ul {
-        list-style-type: none;
-        display: block;
-        // width: $xs;
-        margin: 0 auto;
-        text-align: center;
+  ul {
+    list-style-type: none;
+    display: block;
+    // width: $xs;
+    margin: 0 auto;
+    text-align: center;
 
-        li {
-            display: inline-block;
-            padding: 0 $spacing-unit / 4;
+    li {
+      display: inline-block;
+      padding: 0 $spacing-unit / 4;
 
-            a {
-                color: $text-color;
+      a {
+        color: $text-color;
 
-                &:active,
-                &:hover {
-                    color: $accent-color;
-                }
-            }
-        }
-    }
+        &:active,
+        &:hover {
+          color: $accent-color;
+              }
+          }
+      }
+  }
 }
 
 
@@ -80,33 +80,33 @@
  * Post list
  */
 .post-list {
-    list-style: none;
-    margin: 0;
+  list-style: none;
+  margin: 0;
 
-    > li {
-        margin-bottom: $spacing-unit + $header-font-size;
+  > li {
+    margin-bottom: $spacing-unit + $header-font-size;
 
-        h2 {
-            > a {
-                font-size: $header-font-size / 1.12;
-                line-height: $header-line-height * 1.12;
-                letter-spacing: -0.025em;
+    h2 {
+      > a {
+        font-size: $header-font-size / 1.12;
+        line-height: $header-line-height * 1.12;
+        letter-spacing: -0.025em;
 
-                @include media-query($sm) {
-                    font-size: $header-font-size * 1.5 / 1.2;
-                    line-height: $header-line-height / 1.5 * 1.2 * 1.333;
-                }
-            }
-        }
-    }
+        @include media-query($sm) {
+          font-size: $header-font-size * 1.5 / 1.2;
+          line-height: $header-line-height / 1.5 * 1.2 * 1.333;
+              }
+          }
+      }
+  }
 }
 
 .post-link {
-    font-size: $base-font-size * 1.5;
+  font-size: $base-font-size * 1.5;
 }
 
 .post-link-excerpt {
-    display: block;
+  display: block;
 }
 
 
@@ -114,83 +114,111 @@
  * Posts
  */
 .post-header {
-    // font-family: $header-font-family;
-    font-size: $base-font-size;
+  // font-family: $header-font-family;
+  font-size: $base-font-size;
 }
 
 .post-title {
-    font-size: $base-font-size * 2;
-    letter-spacing: -1px;
-    line-height: $base-line-height / 1.25;
+  font-size: $base-font-size * 2;
+  letter-spacing: -1px;
+  line-height: $base-line-height / 1.25;
 
-    @include media-query($md) {
-        font-size: $base-font-size * 1.5;
-    }
+  @include media-query($md) {
+    font-size: $base-font-size * 1.5;
+  }
 }
 
 .post-meta {
-    color: $subtle-color;
-    font-size: $base-font-size / 1.1;
-    font-family: $header-font-family;
-    margin-bottom: $spacing-unit / 2;
+  color: $subtle-color;
+  font-size: $base-font-size / 1.1;
+  font-family: $header-font-family;
+  margin-bottom: $spacing-unit / 2;
 }
 
 .post-link-excerpt {
-    margin: 0;
+  margin: 0;
 }
 
 .post-content {
-    %header {
-        font-family: $header-font-family;
-        font-weight: $header-font-weight;
-        color: $text-color-dark;
-        letter-spacing: -0.05em;
+  %header {
+    font-family: $header-font-family;
+    font-weight: $header-font-weight;
+    color: $text-color-dark;
+    letter-spacing: -0.05em;
 
-        @extend %divide-header-from-content;
-    }
+    @extend %divide-header-from-content;
+  }
 
-    h4, h5, h6 {
-        display: none; // one who can't arrange content within the hierarchy of three levels should be punished
-    }
+  h4, h5, h6 {
+    display: none; // one who can't arrange content within the hierarchy of three levels should be punished
+  }
 
-    h1 {
-        font-size: $header-font-size;
-        line-height: $header-line-height;
-        margin-bottom: $spacing-unit;
+  h1 {
+    font-size: $header-font-size;
+    line-height: $header-line-height;
+    margin-bottom: $spacing-unit;
 
-        @extend %header;
+    @extend %header;
 
-        @include media-query($sm) {
-            font-size: $header-font-size * 1.5;
-            line-height: $header-line-height / 1.5 * 1.333;
-            margin-bottom: $spacing-unit * 1.15;
-        }
-    }
+    @include media-query($sm) {
+      font-size: $header-font-size * 1.5;
+      line-height: $header-line-height / 1.5 * 1.333;
+      margin-bottom: $spacing-unit * 1.15;
+      }
+  }
 
-    h2 {
-        font-size: $header-font-size / 1.12;
-        line-height: $header-line-height * 1.12;
-        letter-spacing: -0.025em;
-        color: $text-color-light;
+  h2 {
+    font-size: $header-font-size / 1.12;
+    line-height: $header-line-height * 1.12;
+    letter-spacing: -0.025em;
+    color: $text-color-light;
 
-        @extend %header;
+    @extend %header;
 
-        @include media-query($sm) {
-            font-size: $header-font-size * 1.5 / 1.2;
-            line-height: $header-line-height / 1.5 * 1.2 * 1.333;
-        }
-    }
+    @include media-query($sm) {
+      font-size: $header-font-size * 1.5 / 1.2;
+      line-height: $header-line-height / 1.5 * 1.2 * 1.333;
+      }
+  }
 
-    h3 {
-        font-size: $header-font-size / 1.25;
-        line-height: $header-line-height * 1.25;
-        letter-spacing: -0.015em;
-        color: $text-color-light;
+  h3 {
+    font-size: $header-font-size / 1.25;
+    line-height: $header-line-height * 1.25;
+    letter-spacing: -0.015em;
+    color: $text-color-light;
 
-        @extend %header;
+    @extend %header;
 
-        @include media-query($sm) {
-            font-size: $header-font-size * 1.5 / 1.44;
-        }
-    }
+    @include media-query($sm) {
+      font-size: $header-font-size * 1.5 / 1.44;
+      }
+  }
 }
+
+/*
+ * Special page: links
+ */
+.links {
+  width: 70vw;
+  text-align: center;
+  position: absolute;
+  top: calc(33vh - 5vw);
+  left: 15vw;
+  font-size: 10vw;
+  line-height: 10vw;
+  letter-spacing: 0.25rem;
+
+  @include media-query($xs) {
+    width: 75vw;
+    left: 12.5vw;
+    top: calc(50vh - 7.5vw);
+    font-size: 10vw;
+    line-height: 15vw;
+  }
+
+  @include media-query($sm) {
+    width: 75vw;
+    left: 12.5vw;
+  }
+}
+

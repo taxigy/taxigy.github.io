@@ -8,31 +8,28 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-
-
-
 /**
  * Basic styling
  */
 body {
-    height: 100%;
-    background-color: $background-color;
-    font-family: $base-font-family;
-    font-size: $base-font-size;
-    font-weight: $base-font-weight;
-    line-height: $base-line-height;
-    color: $text-color;
-    -webkit-text-size-adjust: 100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  font-weight: $base-font-weight;
+  line-height: $base-line-height;
+  color: $text-color;
+  -webkit-text-size-adjust: 100%;
 
-    ::selection {
-        background: $subtle-color-light;
-    }
+  ::selection {
+    background: $subtle-color-light;
+  }
 
-    @include media-query($sm) {
-        font-size: $base-font-size * 1.1;
-        line-height: $base-line-height * 1.1;
-    }
+  @include media-query($sm) {
+    font-size: $base-font-size * 1.1;
+    line-height: $base-line-height * 1.1;
+  }
 }
 
 
@@ -44,29 +41,29 @@ h1, h2, h3, h4, h5, h6,
 p, pre,
 ul, ol, dl, figure, hr,
 %vertical-rhythm {
-    margin-bottom: $spacing-unit / 2;
+  margin-bottom: $spacing-unit / 2;
 }
 
 hr {
-    width: 20%;
-    margin: $spacing-unit * 2 auto $spacing-unit * 2;
-    height: 2px;
-    border: none;
-    border-top: 1px solid $subtle-color-dark;
-    background: none;
+  width: 20%;
+  margin: $spacing-unit * 2 auto $spacing-unit * 2;
+  height: 2px;
+  border: none;
+  border-top: 1px solid $subtle-color-dark;
+  background: none;
 }
 
 /**
  * Lists
  */
 ul, ol {
-    margin-left: $spacing-unit;
+  margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-    }
+  > ul,
+  > ol {
+  }
 }
 
 
@@ -75,11 +72,11 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-family: $header-font-family;
-    font-size: $header-font-size;
-    font-weight: $header-font-weight;
-    line-height: $header-line-height;
-    color: $text-color-dark;
+  font-family: $header-font-family;
+  font-size: $header-font-size;
+  font-weight: $header-font-weight;
+  line-height: $header-line-height;
+  color: $text-color-dark;
 }
 
 
@@ -88,18 +85,18 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $accent-color;
-    text-decoration: none;
-    transition: ease 0.15s;
+  color: $accent-color;
+  text-decoration: none;
+  transition: ease 0.15s;
 
-    &:visited {
-        color: $accent-color-dark;
-    }
+  &:visited {
+    color: $accent-color-dark;
+  }
 
-    &:hover {
-        color: $text-color;
-        // text-decoration: underline;
-    }
+  &:hover {
+    color: $text-color;
+    // text-decoration: underline;
+  }
 }
 
 
@@ -108,20 +105,20 @@ a {
  * Blockquotes
  */
 blockquote {
-    padding: $spacing-unit / 2 0 $spacing-unit / 2 $spacing-unit;
-    color: $text-color-light;
-    // font-style: italic;
-    // font-size: $base-font-size * 0.9;
-    font-weight: $base-font-weight * 3;
-    letter-spacing: 0.03em;
+  padding: $spacing-unit / 2 0 $spacing-unit / 2 $spacing-unit;
+  color: $text-color-light;
+  // font-style: italic;
+  // font-size: $base-font-size * 0.9;
+  font-weight: $base-font-weight * 3;
+  letter-spacing: 0.03em;
 
-    @include media-query($sm) {
-        padding: $spacing-unit / 2 $spacing-unit * 1.5;
-    }
+  @include media-query($sm) {
+    padding: $spacing-unit / 2 $spacing-unit * 1.5;
+  }
 
-    > p {
-        margin-bottom: $spacing-unit / 2;
-    }
+  > p {
+    margin-bottom: $spacing-unit / 2;
+  }
 }
 
 
@@ -131,37 +128,37 @@ blockquote {
  */
 pre,
 code {
-    font-family: $code-font-family;
-    font-size: $code-font-size;
-    font-weight: $code-font-weight;
-    line-height: $code-line-height;
-    border: 1px solid $subtle-color-light;
-    border-radius: 10px;
-    background-color: $subtle-color-light;
-    // letter-spacing: -0.015em;
+  font-family: $code-font-family;
+  font-size: $code-font-size;
+  font-weight: $code-font-weight;
+  line-height: $code-line-height;
+  border: 1px solid $subtle-color-light;
+  border-radius: 10px;
+  background-color: $subtle-color-light;
+  // letter-spacing: -0.015em;
 
-    @include media-query($sm) {
-        font-size: $code-font-size * 1.1;
-        // line-height: $code-line-height * 1.1;
-    }
+  @include media-query($sm) {
+    font-size: $code-font-size * 1.1;
+    // line-height: $code-line-height * 1.1;
+  }
 }
 
 code {
-    padding: $spacing-unit / 10 $spacing-unit / 4;
+  padding: $spacing-unit / 10 $spacing-unit / 4;
 }
 
 pre {
-    padding: $spacing-unit / 3 $spacing-unit / 2;
-    margin-left: -($spacing-unit / 2);
-    margin-right: -($spacing-unit / 2);
-    overflow-x: scroll;
+  padding: $spacing-unit / 3 $spacing-unit / 2;
+  margin-left: -($spacing-unit / 2);
+  margin-right: -($spacing-unit / 2);
+  overflow-x: scroll;
 
-    > code {
-        background: none;
-        border: none;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  > code {
+    background: none;
+    border: none;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 
@@ -170,25 +167,25 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: $xs * 1.2;
-    // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    // max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
-    @extend %clearfix;
+  max-width: $xs * 1.2;
+  // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  // max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit;
+  padding-left: $spacing-unit;
+  @extend %clearfix;
 
-    @include media-query($sm) {
-        max-width: $sm;
-    }
+  @include media-query($sm) {
+    max-width: $sm;
+  }
 
-    @include media-query($md) {
-        // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        // max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        // padding-right: $spacing-unit / 2;
-        // padding-left: $spacing-unit / 2;
-    }
+  @include media-query($md) {
+    // max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+    // max-width:         calc(#{$content-width} - (#{$spacing-unit}));
+    // padding-right: $spacing-unit / 2;
+    // padding-left: $spacing-unit / 2;
+  }
 }
 
 
@@ -197,17 +194,17 @@ pre {
  * Mixins
  */
 %vertical-rhythm {
-    // padding-top: $spacing-unit / 10 0;
+  // padding-top: $spacing-unit / 10 0;
 }
 
 %divide-header-from-content {
-    margin-top: $spacing-unit * 1.25;
+  margin-top: $spacing-unit * 1.25;
 }
 
 %clearfix {
-    &:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 }
