@@ -1,0 +1,12 @@
+---
+layout: post
+title: "О том, как закончился год"
+date: 2016-01-04 18:00:00
+categories: podcast freelancedad
+number: 12
+duration: "1:23:47"
+length: 63460687
+mp3: https://s3-eu-west-1.amazonaws.com/mgr2sde-mp3/miso-12.mp3
+---
+
+Зачитываю из блокнота все важные моменты прошедшего года. Рассказываю о победителях Банкатона. Ссылаюсь на доклад о разработке на ClojureScript с помощью Figwheel от автора Figwheel: ["Bruce Hauman - Developing ClojureScript With Figwheel"](http://www.youtube.com/watch?v=j-kj2qwJa_E). Говорю о [Codility](http://codility.com), [Upwork](http://upwork.com), [HackerRank](http://hackerrank.com).
