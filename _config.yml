@@ -10,6 +10,6 @@ twitter: taxigy
 medium: taxigy
 github_username:  taxigy
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 # Misc
 license: CC-BY-CA
